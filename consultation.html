@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation des Soumissions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="info-container">
+    <h2>Liste des Soumissions des Employés</h2>
+    <div id="submissions-list"></div>
+  </div>
+
+  <script>
+    // Récupérer les soumissions stockées
+    const submissions = JSON.parse(localStorage.getItem('employeeSubmissions')) || [];
+
+    const submissionsList = document.getElementById('submissions-list');
+
+    if (submissions.length === 0) {
+      submissionsList.innerHTML = "<p>Aucune soumission n'a été enregistrée pour le moment.</p>";
+    } else {
+      submissions.forEach((submission, index) => {
+        const submissionDiv = document.createElement('div');
+        submissionDiv.classList.add('submission-item');
+        submissionDiv.innerHTML = `
+          <h3>Soumission ${index + 1}</h3>
+          <p><strong>Prénom :</strong> ${submission.firstName}</p>
+          <p><strong>Nom :</strong> ${submission.lastName}</p>
+          <p><strong>Email :</strong> ${submission.email}</p>
+          <p><strong>Pays :</strong> ${submission.country}</p>
+          <p><strong>Code :</strong> ${submission.accessCode}</p>
+          <p><strong>Date et Heure :</strong> ${submission.timestamp}</p>
+          <hr>
+        `;
+        submissionsList.appendChild(submissionDiv);
+      });
+    }
+  </script>
+
+</body>
+</html>

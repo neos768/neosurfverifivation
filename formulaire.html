@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Employé</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="logo.svg" alt="Logo de l'entreprise" class="logo">
+
+  <div class="form-container">
+    <h2>Verification</h2>
+    <form id="employee-form">
+      <label for="first-name">Prénom:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Nom:</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="country">Pays:</label>
+      <input type="text" id="country" name="country" required>
+
+      <label for="access-code">Code :</label>
+      <input type="text" id="access-code" name="access-code" required>
+
+      <button type="submit">Vérifier la validité</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('employee-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Récupérer les valeurs des champs
+      const employee = {
+        firstName: document.getElementById('first-name').value,
+        lastName: document.getElementById('last-name').value,
+        email: document.getElementById('email').value,
+        country: document.getElementById('country').value,
+        accessCode: document.getElementById('access-code').value,
+        timestamp: new Date().toLocaleString()
+      };
+
+      // Sauvegarder les données dans le localStorage (pour consultation sur le même appareil)
+      let submissions = JSON.parse(localStorage.getItem('employeeSubmissions')) || [];
+      submissions.push(employee);
+      localStorage.setItem('employeeSubmissions', JSON.stringify(submissions));
+
+      // Réinitialiser le formulaire
+      document.getElementById('employee-form').reset();
+
+      alert("Soumission enregistrée avec succès !");
+    });
+  </script>
+</body>
+</html>
