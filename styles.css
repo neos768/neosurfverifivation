@@ -7,7 +7,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #ff3b6b, #1b1f5e);
+  background: linear-gradient(135deg,
+
   color: white;
 }
 
@@ -70,12 +71,13 @@ body {
 }
 
 .form-container {
-  width: 60%;
-  background-color: #f3f9fb;           /* Bleu clair très pâle, ajusté pour être plus doux */
-  border: 1px solid #d1e3f5;            /* Bordure bleue claire */
-  margin-right: 20px;                   /* Espacement entre le formulaire et l'encadré */
-  padding: 20px;                        /* Ajout d'un peu d'espace à l'intérieur du formulaire */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  width: 500px; /* Largeur du formulaire */
+  max-width: 90%; /* S'adapte aux petits écrans */
+  padding: 30px; /* Espace intérieur */
+  background-color: #f3f9fb; /* Bleu clair très pâle, ajusté pour être plus doux */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombrage subtil */
+  border-radius: 8px; /* Bords arrondis */
+  margin-right: 20px;
 }
 
 .info-box {
