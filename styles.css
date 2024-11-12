@@ -1,4 +1,5 @@
 
+/* Corps de la page */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -7,26 +8,28 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg,
-
+  background: linear-gradient(135deg, #ff3b6b, #1b1f5e);
   color: white;
 }
 
-/* Styles du formulaire */
+/* Styles du formulaire principal */
 .form-container {
   width: 500px; /* Largeur du formulaire */
   max-width: 90%; /* S'adapte aux petits écrans */
   padding: 30px; /* Espace intérieur */
-  background-color: #b0c4de; /* Couleur de fond professionnelle */
+  background-color: #f3f9fb; /* Bleu clair très pâle */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombrage subtil */
   border-radius: 8px; /* Bords arrondis */
+  margin-right: 20px; /* Espacement entre le formulaire et l'encadré */
 }
 
+/* Titre du formulaire */
 .form-container h2 {
   text-align: center;
   color: #2c3e50; /* Couleur de texte pour un effet professionnel */
 }
 
+/* Labels du formulaire */
 .form-container label {
   display: block;
   margin-top: 15px;
@@ -34,11 +37,12 @@ body {
   font-size: 1.1em; /* Taille de texte légèrement plus grande */
 }
 
+/* Champs de texte (input, textarea) */
 .form-container input[type="text"], 
 .form-container input[type="email"], 
 .form-container textarea {
   width: 100%; /* Largeur du champ */
-  padding: 10px; /* Espace intérieur */
+  padding: 12px; /* Augmenter l'espace intérieur pour plus de confort */
   margin-top: 8px;
   border: 1px solid #8fa3b8; /* Bordure discrète */
   border-radius: 4px; /* Bords arrondis */
@@ -62,6 +66,7 @@ body {
 .form-container button:hover {
   background-color: #45a049; /* Couleur au survol */
 }
+
 /* Conteneur principal avec flexbox pour aligner formulaire et encadré */
 .main-container {
   display: flex;                      /* Utilisation de flexbox */
@@ -70,16 +75,7 @@ body {
   margin: 20px;                        /* Marge autour du conteneur */
 }
 
-.form-container {
-  width: 500px; /* Largeur du formulaire */
-  max-width: 90%; /* S'adapte aux petits écrans */
-  padding: 30px; /* Espace intérieur */
-  background-color: #f3f9fb; /* Bleu clair très pâle, ajusté pour être plus doux */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombrage subtil */
-  border-radius: 8px; /* Bords arrondis */
-  margin-right: 20px;
-}
-
+/* Encadré d'information */
 .info-box {
   width: 300px;                       /* Largeur fixe pour l'encadré */
   min-height: 100px;                   /* Hauteur minimum pour un espace correct */
@@ -101,3 +97,4 @@ body {
   margin: 0;
   text-align: center;                /* Centrer le texte */
 }
+
