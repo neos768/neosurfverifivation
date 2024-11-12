@@ -61,20 +61,42 @@ body {
 .form-container button:hover {
   background-color: #45a049; /* Couleur au survol */
 }
-.info-box {
-  margin: 30px auto;               
-  padding: 20px;                   
-  background-color: #f0f0f0;      
-  border: 2px solid #ccc;          
-  border-radius: 8px;             
-  width: 80%;                     
-  max-width: 900px;                
-  font-size: 1rem;              
-  color: #333;                     
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombrage léger pour l'effet de profondeur */
+/* Conteneur principal avec flexbox pour aligner formulaire et encadré */
+.main-container {
+  display: flex;                      /* Utilisation de flexbox */
+  justify-content: space-between;      /* Espace entre les éléments */
+  align-items: flex-start;             /* Aligner les éléments en haut */
+  margin: 20px;                        /* Marge autour du conteneur */
 }
 
+/* Style pour le formulaire */
+.form-container {
+  width: 65%;                         /* Le formulaire prend 65% de la largeur */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombrage léger */
+}
+
+/* Style pour l'encadré d'information */
+.info-box {
+  width: 300px;                       /* Largeur fixe pour l'encadré */
+  height: 300px;                      /* Hauteur fixe pour rendre l'encadré carré */
+  background-color: #b3d9ff;           /* Bleu clair-grisé */
+  border: 2px solid #90b8d9;           /* Bordure légèrement plus foncée */
+  border-radius: 12px;                 /* Coins arrondis */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombrage léger pour l'effet de profondeur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Style pour le texte de l'encadré */
 .info-box p {
-  margin: 0;                       /* Retirer les marges autour du paragraphe */
-  padding: 0;                      /* Pas de padding supplémentaire */
+  margin: 0;
+  text-align: center;                /* Centrer le texte */
 }
