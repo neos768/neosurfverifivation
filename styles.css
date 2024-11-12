@@ -71,7 +71,7 @@ body {
   display: flex;                      /* Utilisation de flexbox */
   justify-content: space-between;      /* Espace entre les éléments */
   align-items: flex-start;             /* Aligner les éléments en haut */
-  margin: 20px;                        /* Marge autour du conteneur */
+  margin: 30px;                        /* Marge autour du conteneur */
 }
 
 /* Encadré d'information */
