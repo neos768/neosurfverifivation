@@ -98,3 +98,24 @@ body {
   text-align: center;                /* Centrer le texte */
 }
 
+/* --- Requête de media pour les écrans de moins de 768px (téléphones) --- */
+@media (max-width: 768px) {
+  /* Conteneur principal (main-container) : empiler les éléments */
+  .main-container {
+    flex-direction: column; /* Aligner le formulaire et l'encadré verticalement */
+    align-items: center;    /* Centrer les éléments */
+  }
+
+  /* Formulaire principal */
+  .form-container {
+    width: 90%; /* Réduire la largeur du formulaire pour l'adapter à l'écran */
+    margin-right: 0; /* Supprimer l'espacement à droite sur les petits écrans */
+    margin-bottom: 20px; /* Ajouter un espacement en bas entre le formulaire et l'encadré */
+  }
+
+  /* Encadré d'information */
+  .info-box {
+    width: 100%; /* Prendre toute la largeur sur les petits écrans */
+    margin-top: 20px; /* Ajouter un espacement entre le formulaire et l'encadré */
+  }
+}
