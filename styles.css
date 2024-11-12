@@ -70,16 +70,17 @@ body {
 }
 
 .form-container {
-  width: 60%;                            /* 60% de la largeur */
-  background-color: #f3f9fb;             /* Bleu clair très pâle */
-  border: 1px solid #d1e3f5;             /* Bordure bleue claire */
-  margin-right: 20px;                    /* Espacement entre le formulaire et l'encadré */
+  width: 60%;
+  background-color: #f3f9fb;           /* Bleu clair très pâle, ajusté pour être plus doux */
+  border: 1px solid #d1e3f5;            /* Bordure bleue claire */
+  margin-right: 20px;                   /* Espacement entre le formulaire et l'encadré */
+  padding: 20px;                        /* Ajout d'un peu d'espace à l'intérieur du formulaire */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
 
-/* Style pour l'encadré d'information */
 .info-box {
   width: 300px;                       /* Largeur fixe pour l'encadré */
-  height: 300px;                      /* Hauteur fixe pour rendre l'encadré carré */
+  min-height: 100px;                   /* Hauteur minimum pour un espace correct */
   background-color: #e1f2fa;           /* Bleu clair-grisé */
   border: 2px solid #90b8d9;           /* Bordure légèrement plus foncée */
   border-radius: 12px;                 /* Coins arrondis */
@@ -90,6 +91,7 @@ body {
   justify-content: center;
   font-size: 1rem;
   color: #333;
+  text-align: center;                  /* Centrer le texte dans l'encadré */
 }
 
 /* Style pour le texte de l'encadré */
