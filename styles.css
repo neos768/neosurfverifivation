@@ -127,3 +127,10 @@ body {
     display: block; /* Forcer l'image à être un bloc et non inline */
   }
 }
+
+.logo {
+  width: 100px; /* Taille de base */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px; /* Centré avec un espace en bas */
+}
