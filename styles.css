@@ -124,5 +124,6 @@ body {
     max-width: 150px; /* Fixer une taille maximale pour le logo */
     height: auto; /* Maintenir les proportions de l'image */
     margin-bottom: 20px; /* Ajouter un espacement sous le logo */
+    display: block; /* S'assurer que l'image est un bloc et non un inline */
   }
 }
