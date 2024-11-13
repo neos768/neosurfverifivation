@@ -13,9 +13,9 @@ body {
 
 /* Styles du formulaire principal */
 .form-container {
-  width: 500px; /* Largeur du formulaire */
-  max-width: 90%; /* S'adapte aux petits écrans */
-  padding: 30px; /* Espace intérieur */
+  width: 520px; /* Largeur ajustée du formulaire */
+  max-width: 95%; /* Largeur maximum pour les petits écrans */
+  padding: 30px 40px; /* Espace intérieur ajusté pour donner plus d'espace */
   background-color: #f3f9fb; /* Bleu clair très pâle */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombrage subtil */
   border-radius: 8px; /* Bords arrondis */
@@ -128,6 +128,7 @@ body {
   }
 }
 
+/* Styles pour le logo */
 .logo {
   width: 100px; /* Taille de base */
   height: auto;
